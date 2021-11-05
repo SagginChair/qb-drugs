@@ -255,7 +255,7 @@ function randomDeliveryItemOnRep()
     for k, v in pairs(Config.DeliveryItems) do
         if Config.DeliveryItems[k]["minrep"] <= myRep then
             local availableItems = {}
-            table.insert(availableItems, k)
+            availableItems[#availableItems+1] = k
 
             local item = math.random(1, #availableItems)
 
@@ -366,10 +366,10 @@ function checkPedDistance()
     if next(PlayerPeds) == nil then
         for _, player in ipairs(GetActivePlayers()) do
             local ped = GetPlayerPed(player)
-            table.insert(PlayerPeds, ped)
+            PlayerPeds[#PlayerPeds+1] = ped
         end
     end
-    
+
     local closestPed, closestDistance = QBCore.Functions.GetClosestPed(coords, PlayerPeds)
 
     if closestDistance < 40 and closestPed ~= 0 then
@@ -384,11 +384,11 @@ end
 function doPoliceAlert()
     local ped = PlayerPedId()
     local pos = GetEntityCoords(ped)
-    local s1, s2 = Citizen.InvokeNative(0x2EB41072B4C1E4C0, pos.x, pos.y, pos.z, Citizen.PointerValueInt(), Citizen.PointerValueInt())
+    local s1, s2 = GetStreetNameAtCoord(pos.x, pos.y, pos.z)
     local street1 = GetStreetNameFromHashKey(s1)
     local street2 = GetStreetNameFromHashKey(s2)
     local streetLabel = street1
-    if street2 ~= nil then 
+    if street2 ~= nil then
         streetLabel = streetLabel .. " " .. street2
     end
 
