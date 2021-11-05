@@ -129,7 +129,8 @@ Config.CornerSellingDrugsList = {
     "crack_baggy",
     "cokebaggy",
     "meth",
-    "lsdtabs"
+    "lsdtabs",
+    "cannabis-lotion"
 }
 
 Config.DrugsPrice = {
@@ -172,6 +173,10 @@ Config.DrugsPrice = {
     ["lsdtabs"] = {
         min = 100,
         max = 300,
+    },
+    ["cannabis-lotion"] = {
+        min = 300,
+        max = 500,
     },
 }
 
