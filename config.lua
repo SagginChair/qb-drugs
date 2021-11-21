@@ -18,7 +18,7 @@ Config.Products = {
         info = {},
         type = "item",
         slot = 2,
-        minrep = 20,
+        minrep = 5,
     },
     [3] = {
         name = "weed_purple-haze",
