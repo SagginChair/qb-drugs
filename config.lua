@@ -59,8 +59,8 @@ Config.DrugsPrice = {
         max = 550,
     },
     ["cokebaggy"] = {
-        min = 300,
-        max = 450,
+        min = 250,
+        max = 400,
     },
     ["meth"] = {
         min = 500,
@@ -68,7 +68,7 @@ Config.DrugsPrice = {
     },
     ["lsdtabs"] = {
         min = 100,
-        max = 300,
+        max = 250,
     },
     ["xtcbaggy"] = {
         min = 700,
