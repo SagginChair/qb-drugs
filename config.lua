@@ -16,73 +16,48 @@ Config.Products = {
 Config.Dealers = {}
 
 Config.CornerSellingDrugsList = {
-    "weed_white-widow",
-    "weed_skunk",
-    "weed_purple-haze",
-    "weed_og-kush",
-    "weed_amnesia",
-    "weed_ak47",
-    "crack_baggy",
     "cokebaggy",
     "meth",
-    "lsdtabs",
-    "xtcbaggy",
     "whitewidowdelivery",
-    "heroinneedle"
+    "heroinneedle",
+    "blueblunt",
+    "widowblunt",
+    "trainblunt",
+    "purpleblunt",
 }
 
 Config.DrugsPrice = {
-    ["weed_white-widow"] = {
-        min = 200,
-        max = 350,
-    },
-    ["weed_og-kush"] = {
-        min = 220,
-        max = 370,
-    },
-    ["weed_skunk"] = {
-        min = 250,
-        max = 450,
-    },
-    ["weed_amnesia"] = {
-        min = 350,
-        max = 450,
-    },
-    ["weed_purple-haze"] = {
-        min = 400,
-        max = 600,
-    },
-    ["weed_ak47"] = {
-        min = 450,
-        max = 700,
-    },
-    ["crack_baggy"] = {
-        min = 400,
-        max = 550,
-    },
     ["cokebaggy"] = {
-        min = 225,
-        max = 325,
+        min = 275,
+        max = 320,
     },
     ["meth"] = {
-        min = 500,
-        max = 700,
-    },
-    ["lsdtabs"] = {
-        min = 100,
-        max = 250,
-    },
-    ["xtcbaggy"] = {
-        min = 700,
-        max = 1000,
+        min = 275,
+        max = 325,
     },
     ["whitewidowdelivery"] = {
-        min = 6000,
-        max = 10000,
+        min = 1200,
+        max = 1900,
     },
     ["heroinneedle"] = {
-        min = 400,
-        max = 800,
+        min = 200,
+        max = 400,
+    },
+    ["blueblunt"] = {
+        min = 50,
+        max = 125,
+    },
+    ["widowblunt"] = {
+        min = 50,
+        max = 125,
+    },
+    ["trainblunt"] = {
+        min = 50,
+        max = 125,
+    },
+    ["purpleblunt"] = {
+        min = 50,
+        max = 125,
     },
 }
 
